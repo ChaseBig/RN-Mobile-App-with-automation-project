@@ -9,7 +9,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: "center", backgroundColor: '#fff' }}>
-        <KnockAppImage />
+        {/* <KnockAppImage style={styles.rectangle}/> */}
           <Text testID="kitchenHeader" style={{fontWeight: 'bold', fontSize: 19, top: 55, color: 'white', alignItems: 'center'}}>
             Kitchen
           </Text>
@@ -34,5 +34,10 @@ const styles = StyleSheet.create({
   test3: {
       color: 'blue',
       marginBottom: 20
+  },
+  rectangle: {
+    width: 100 * 2,
+    height: 100,
+    backgroundColor: '#2196F3'
   }
 });

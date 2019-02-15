@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import CameraRollPicker from 'react-native-camera-roll-picker';
 import { View, Text, Button } from 'react-native';
 import { SavedPhotosLauncher } from './SavedPhotosLauncher';
-import { CommentsLauncher } from './CommentsLauncher';
+import { AddCommentsLauncher } from './AddCommentsLauncher';
 import { FloorLevel } from './FloorLevel';
 
 
@@ -24,7 +24,7 @@ export class LayoutButtons extends Component {
       <View>
         <View style={{flexDirection: 'row', justifyContent: 'center'}}>
           <SavedPhotosLauncher onPress={this.onPhotosButtonPress} />
-          <CommentsLauncher onPress={this.onCommentsButtonPress} />
+          <AddCommentsLauncher onPress={this.onCommentsButtonPress} />
         </View>
           <Text testID="selectedFloorLevel" >
             {this.state.floorLevel}

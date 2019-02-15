@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, TouchableOpacity, Image, Text, View } from 'react-native';
+import { StyleSheet, TouchableOpacity, Text, View } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { ImagePicker, Permissions } from 'expo';
 
@@ -8,7 +8,6 @@ export class SavedPhotosLauncher extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            image: null,
             photoNumber: 0,
         }
     }
@@ -26,8 +25,6 @@ export class SavedPhotosLauncher extends Component {
     };
       
     render() {
-        let { image } = this.state;
-    
         return (
             <TouchableOpacity style={styles.cameraBtn} onPress={this.isShowingSavedPhotos}>
                 <View style={{flexDirection: 'row', paddingTop: 6}}>
@@ -37,7 +34,8 @@ export class SavedPhotosLauncher extends Component {
                         color='#2196F3'
                         paddingTop={10}
                     />
-                    <Text style={{color: '#2196F3', paddingLeft: 5, paddingTop: 3}}> {this.state.photoNumber} Photos</Text>
+                    <Text style={{color: '#2196F3', paddingLeft: 5, paddingTop: 3}}> 
+                        {this.state.photoNumber} Photos</Text>
                 </View>
             </TouchableOpacity>
         );

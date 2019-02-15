@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { StyleSheet, TouchableOpacity, Button, Text, View } from 'react-native';
+import { StyleSheet, TouchableOpacity, Text, View } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { CameraLauncher } from './CameraLauncher';
+import { CommentsLauncher } from './CommentsLauncher';
 
 const wallCondition = {
     Fix: 'Fix',
@@ -13,8 +15,12 @@ const wallCondition = {
 export class WallsAndPaint extends Component {
     constructor(props){
         super(props)
+        this.onCameraLaunchButtonPress = this.onCameraLaunchButtonPress.bind(this);
+        this.onCommentsButtonPress = this.onCommentsButtonPress.bind(this);
         this.state = {
-            wallCondition
+            wallCondition,
+            isCameraVisible: false,
+            isShowingCommentsModal: false
         }
     }
     render() {
@@ -60,20 +66,36 @@ export class WallsAndPaint extends Component {
                                 size={35}
                                 style={this.state.wallCondition === (wallCondition.Excellent) ? styles.btnActive : styles.btnInactive}
                             />
-                            <Text style={{marginLeft: 11,fontSize:11}}>{wallCondition.Excellent}</Text>
+                        <Text style={{marginLeft: 11,fontSize:11}}>{wallCondition.Excellent}</Text>
                         </TouchableOpacity>
+                    <View>
+                        <CameraLauncher onPress={this.onCameraLaunchButtonPress} />
+                        <CommentsLauncher onPress={this.onCommentsButtonPress} />
                     </View>
+                </View>
             </View>
         );
     }
+
+onCameraLaunchButtonPress(isCameraVisible){
+    this.setState({
+        isCameraVisible: true
+    });
+  }
+
+
+onCommentsButtonPress(isShowingCommentsModal){
+    this.setState({
+        isShowingCommentsModal: true
+    });
+  }
 }
 
 const styles = StyleSheet.create({
     container: {
         marginTop: 35, 
         textAlign: 'right',
-        marginRight: 70,
-        justifyContent: 'flex-start'
+        marginRight: -100
     },
     buttonGroup: {
         lineHeight: 13,

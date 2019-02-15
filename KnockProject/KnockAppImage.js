@@ -14,8 +14,15 @@ export class KnockAppImage extends Component {
     }
   }
 
-// export const KnockAppImage = () => {
-//     return (
-//     <Image source={pic} style={{width: 375, height: 811}}/>
-//     )
-// };
+//     <View style={styles.rectangle}></View>
+//     );
+//   }
+// }
+
+//   const styles = StyleSheet.create({
+//     rectangle: {
+//       width: 100 * 4,
+//       height: 100,
+//       backgroundColor: '#2196F3'
+//     }
+//   });
