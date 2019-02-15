@@ -1,20 +1,35 @@
 import React, { Component } from 'react';
-import { StyleSheet, TouchableOpacity, Button, Text, View } from 'react-native';
+import { StyleSheet, TouchableOpacity, Image, Text, View } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { ImagePicker, Permissions } from 'expo';
 
 
 export class SavedPhotosLauncher extends Component {
     constructor(props) {
         super(props)
         this.state = {
-          isShowingSavedPhotos: false,
-          photoNumber: 2,
+            image: null,
+            photoNumber: 0,
         }
     }
+    isShowingSavedPhotos = async () => {
+        await Permissions.askAsync(Permissions.CAMERA, Permissions.CAMERA_ROLL);
+        let result = await ImagePicker.launchImageLibraryAsync({
 
+        });
+    
+        console.log(result);
+    
+        if (!result.cancelled) {
+            this.setState({ photoNumber: this.state.photoNumber + 1});
+        }
+    };
+      
     render() {
+        let { image } = this.state;
+    
         return (
-            <TouchableOpacity style={styles.cameraBtn} onPress={() => onPress(!isShowingSavedPhotos)}>
+            <TouchableOpacity style={styles.cameraBtn} onPress={this.isShowingSavedPhotos}>
                 <View style={{flexDirection: 'row', paddingTop: 6}}>
                     <Icon
                         name="camera"
@@ -28,7 +43,7 @@ export class SavedPhotosLauncher extends Component {
         );
     }
 }
-
+    
     const styles = StyleSheet.create({
         cameraBtn: {
             borderWidth:1,
