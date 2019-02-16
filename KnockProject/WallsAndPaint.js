@@ -19,7 +19,7 @@ export class WallsAndPaint extends Component {
         this.onCommentsButtonPress = this.onCommentsButtonPress.bind(this);
         this.state = {
             wallCondition,
-            isCameraVisible: false,
+            accessCamera: false,
             isShowingCommentsModal: false
         }
     }
@@ -77,9 +77,9 @@ export class WallsAndPaint extends Component {
         );
     }
 
-onCameraLaunchButtonPress(isCameraVisible){
+onCameraLaunchButtonPress(accessCamera){
     this.setState({
-        isCameraVisible: true
+        accessCamera: true
     });
   }
 

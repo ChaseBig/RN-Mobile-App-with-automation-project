@@ -80,7 +80,8 @@ export class CommentsLauncher extends Component {
             height: 40,
             width: 150,
             color: '#2196F3',
-            backgroundColor: '#fff'
+            paddingTop: 19,
+            paddingLeft: 20
         },
         doneBtn: {
             borderWidth:1,

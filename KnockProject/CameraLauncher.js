@@ -15,21 +15,21 @@ export class CameraLauncher extends Component {
     async componentWillMount() {
         const { status } = await Permissions.askAsync(Permissions.CAMERA);
         this.setState({ hasCameraPermission: status === 'granted' });
-       
       }
-    
       async accessCamera()
       {
         if (this.state.isCapturing)
         {
             let photo = await this.camera.takePictureAsync();
             this.setState({ isCapturing: false, accessCameraLabel: 'Retake', capturedPhoto: photo.uri});
+            console.log(state);
         }
+        
         else
         {
-              this.setState({ isCapturing: true, accessCameraLabel: 'Camera Open', capturedPhoto: null});
+              this.setState({ isCapturing: true, accessCameraLabel: 'Camera', capturedPhoto: null});
         }
-      }
+      };
       render() {
           return (
             <View style={{ flex: 1 }}>
@@ -99,11 +99,9 @@ export class CameraLauncher extends Component {
             margin: 40
           },
         cameraBtn: {
-            borderColor: '#2196F3',
             height: 40,
             width: 150,
             color: '#2196F3',
-            justifyContent: 'flex-start',
-            backgroundColor: '#fff'
+            paddingLeft: 20
         }
     });
