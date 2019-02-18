@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 import { KnockAppImage } from './Components/KnockAppImage';
 import { RoomLayout } from './Components/RoomLayout';
 import { Condition } from './Components/Condition';
+import { CommentsLauncher } from './Components/CommentsLauncher';
 
 
 export default class App extends Component {
@@ -15,6 +16,7 @@ export default class App extends Component {
           </Text>
         <RoomLayout />
         <Condition />
+        <CommentsLauncher />
       </View>
     );
   }

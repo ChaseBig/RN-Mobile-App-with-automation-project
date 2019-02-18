@@ -3,7 +3,7 @@ import { StyleSheet, TouchableOpacity, TextInput, Modal, Text, View } from 'reac
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 
-export class CommentsLauncher extends Component {
+export class AddCommentsLauncher extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -47,12 +47,14 @@ export class CommentsLauncher extends Component {
                 </Modal>
 
                 <TouchableOpacity style={styles.commentsBtn} onPress={() => this.setModalVisible(true)} >
-                    <View>
+                    <View style={{flexDirection: 'row', paddingTop: 3}}>
                         <Icon
                             name="commenting"
                             size={22}
                             color='#2196F3'
+                            paddingTop={10}
                         />
+                        <Text style={{color: '#2196F3', paddingLeft: 10, paddingTop: 3}}>Add Comments</Text>
                     </View>
                 </TouchableOpacity>
             </View>
@@ -76,12 +78,23 @@ export class CommentsLauncher extends Component {
             flexWrap: 'wrap'
         },
         commentsBtn: {
-            borderColor: '#2196F3',
+            paddingLeft: 9,
+            borderWidth:1,
+            borderColor:'#2196F3',
             height: 40,
             width: 150,
             color: '#2196F3',
-            paddingTop: 19,
-            paddingLeft: 20
+            marginTop: -4,
+            marginLeft: 10,
+            marginRight: 4,
+            alignSelf: 'flex-end',
+            alignItems: 'flex-end',
+            fontSize: 13,
+            textAlign: 'right',
+            justifyContent: 'flex-start',
+            backgroundColor:'#fff',
+            borderRadius:12,
+            padding: 6,
         },
         doneBtn: {
             borderWidth:1,
