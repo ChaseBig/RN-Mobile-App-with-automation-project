@@ -1,0 +1,400 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WallsAndPaint should render TouchableOpacity "Good" wall condition 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[MockFunction]}
+>
+  Fix
+</TouchableOpacity>
+`;
+
+exports[`WallsAndPaint should render correctly with no props 1`] = `
+<Component
+  style={
+    Object {
+      "marginRight": -100,
+      "marginTop": 35,
+      "textAlign": "right",
+    }
+  }
+>
+  <Component
+    style={
+      Object {
+        "fontSize": 15,
+        "fontWeight": "bold",
+      }
+    }
+  >
+    Walls / Paint
+  </Component>
+  <Component
+    style={
+      Object {
+        "flexDirection": "row",
+        "lineHeight": 13,
+        "marginLeft": 1,
+        "marginTop": 32,
+      }
+    }
+  >
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={[Function]}
+      testID="floorLevelSelection"
+    >
+      <Icon
+        allowFontScaling={false}
+        name="medkit"
+        size={35}
+        style={
+          Object {
+            "color": "#B5B5B5",
+            "marginLeft": 19,
+            "marginRight": 3,
+            "paddingLeft": 0,
+            "paddingRight": -6,
+          }
+        }
+      />
+      <Component
+        style={
+          Object {
+            "fontSize": 11,
+            "marginLeft": 21,
+          }
+        }
+      >
+        Fix
+      </Component>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={[Function]}
+      testID="floorLevelSelection"
+    >
+      <Icon
+        allowFontScaling={false}
+        name="frown-o"
+        size={35}
+        style={
+          Object {
+            "color": "#B5B5B5",
+            "marginLeft": 19,
+            "marginRight": 3,
+            "paddingLeft": 0,
+            "paddingRight": -6,
+          }
+        }
+      />
+      <Component
+        style={
+          Object {
+            "fontSize": 11,
+            "marginLeft": 22,
+            "paddingRight": -10,
+          }
+        }
+      >
+        Poor
+      </Component>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={[Function]}
+      testID="floorLevelSelection"
+    >
+      <Icon
+        allowFontScaling={false}
+        name="meh-o"
+        size={35}
+        style={
+          Object {
+            "color": "#B5B5B5",
+            "marginLeft": 19,
+            "marginRight": 3,
+            "paddingLeft": 0,
+            "paddingRight": -6,
+          }
+        }
+      />
+      <Component
+        style={
+          Object {
+            "fontSize": 11,
+            "marginLeft": 15,
+            "paddingLeft": 10,
+          }
+        }
+      >
+        Average
+      </Component>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={[Function]}
+      testID="floorLevelSelection"
+    >
+      <Icon
+        allowFontScaling={false}
+        name="smile-o"
+        size={35}
+        style={
+          Object {
+            "color": "#B5B5B5",
+            "marginLeft": 19,
+            "marginRight": 3,
+            "paddingLeft": 0,
+            "paddingRight": -6,
+          }
+        }
+      />
+      <Component
+        style={
+          Object {
+            "fontSize": 11,
+            "marginLeft": 11,
+            "paddingLeft": 1,
+          }
+        }
+      >
+        Good
+      </Component>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={[Function]}
+      testID="floorLevelSelection"
+    >
+      <Icon
+        allowFontScaling={false}
+        name="smile-o"
+        size={35}
+        style={
+          Object {
+            "color": "#B5B5B5",
+            "marginLeft": 19,
+            "marginRight": 3,
+            "paddingLeft": 0,
+            "paddingRight": -6,
+          }
+        }
+      />
+      <Component
+        style={
+          Object {
+            "fontSize": 11,
+            "marginLeft": 11,
+          }
+        }
+      >
+        Excellent
+      </Component>
+    </TouchableOpacity>
+    <Component>
+      <CameraLauncher
+        onPress={[Function]}
+      />
+      <CommentsLauncher
+        onPress={[Function]}
+      />
+    </Component>
+  </Component>
+</Component>
+`;
+
+exports[`WallsAndPaint should render view container text correctly with given string 1`] = `
+<Component
+  style={
+    Object {
+      "marginRight": -100,
+      "marginTop": 35,
+      "textAlign": "right",
+    }
+  }
+>
+  <Component
+    style={
+      Object {
+        "fontSize": 15,
+        "fontWeight": "bold",
+      }
+    }
+  >
+    Walls / Paint
+  </Component>
+  <Component
+    style={
+      Object {
+        "flexDirection": "row",
+        "lineHeight": 13,
+        "marginLeft": 1,
+        "marginTop": 32,
+      }
+    }
+  >
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={[Function]}
+      testID="floorLevelSelection"
+    >
+      <Icon
+        allowFontScaling={false}
+        name="medkit"
+        size={35}
+        style={
+          Object {
+            "color": "#B5B5B5",
+            "marginLeft": 19,
+            "marginRight": 3,
+            "paddingLeft": 0,
+            "paddingRight": -6,
+          }
+        }
+      />
+      <Component
+        style={
+          Object {
+            "fontSize": 11,
+            "marginLeft": 21,
+          }
+        }
+      >
+        Fix
+      </Component>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={[Function]}
+      testID="floorLevelSelection"
+    >
+      <Icon
+        allowFontScaling={false}
+        name="frown-o"
+        size={35}
+        style={
+          Object {
+            "color": "#B5B5B5",
+            "marginLeft": 19,
+            "marginRight": 3,
+            "paddingLeft": 0,
+            "paddingRight": -6,
+          }
+        }
+      />
+      <Component
+        style={
+          Object {
+            "fontSize": 11,
+            "marginLeft": 22,
+            "paddingRight": -10,
+          }
+        }
+      >
+        Poor
+      </Component>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={[Function]}
+      testID="floorLevelSelection"
+    >
+      <Icon
+        allowFontScaling={false}
+        name="meh-o"
+        size={35}
+        style={
+          Object {
+            "color": "#B5B5B5",
+            "marginLeft": 19,
+            "marginRight": 3,
+            "paddingLeft": 0,
+            "paddingRight": -6,
+          }
+        }
+      />
+      <Component
+        style={
+          Object {
+            "fontSize": 11,
+            "marginLeft": 15,
+            "paddingLeft": 10,
+          }
+        }
+      >
+        Average
+      </Component>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={[Function]}
+      testID="floorLevelSelection"
+    >
+      <Icon
+        allowFontScaling={false}
+        name="smile-o"
+        size={35}
+        style={
+          Object {
+            "color": "#B5B5B5",
+            "marginLeft": 19,
+            "marginRight": 3,
+            "paddingLeft": 0,
+            "paddingRight": -6,
+          }
+        }
+      />
+      <Component
+        style={
+          Object {
+            "fontSize": 11,
+            "marginLeft": 11,
+            "paddingLeft": 1,
+          }
+        }
+      >
+        Good
+      </Component>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={[Function]}
+      testID="floorLevelSelection"
+    >
+      <Icon
+        allowFontScaling={false}
+        name="smile-o"
+        size={35}
+        style={
+          Object {
+            "color": "#B5B5B5",
+            "marginLeft": 19,
+            "marginRight": 3,
+            "paddingLeft": 0,
+            "paddingRight": -6,
+          }
+        }
+      />
+      <Component
+        style={
+          Object {
+            "fontSize": 11,
+            "marginLeft": 11,
+          }
+        }
+      >
+        Excellent
+      </Component>
+    </TouchableOpacity>
+    <Component>
+      <CameraLauncher
+        onPress={[Function]}
+      />
+      <CommentsLauncher
+        onPress={[Function]}
+      />
+    </Component>
+  </Component>
+</Component>
+`;

@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WallsAndPaint should render TouchableOpacity "Good" wall condition 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[MockFunction]}
+>
+  Goasdfod
+</TouchableOpacity>
+`;
+
+exports[`WallsAndPaint should render correctly with no props 1`] = `
+<Component
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+    }
+  }
+>
+  <Component
+    style={
+      Object {
+        "alignItems": "center",
+        "color": "white",
+        "fontSize": 19,
+        "fontWeight": "bold",
+        "top": 55,
+      }
+    }
+    testID="kitchenHeader"
+  >
+    Kitchen
+  </Component>
+  <RoomLayout />
+  <WallsAndPaint />
+</Component>
+`;
+
+exports[`WallsAndPaint should render view container text correctly with given string 1`] = `
+<Component
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+    }
+  }
+>
+  <Component
+    style={
+      Object {
+        "alignItems": "center",
+        "color": "white",
+        "fontSize": 19,
+        "fontWeight": "bold",
+        "top": 55,
+      }
+    }
+    testID="kitchenHeader"
+  >
+    Kitchen
+  </Component>
+  <RoomLayout />
+  <WallsAndPaint />
+</Component>
+`;
