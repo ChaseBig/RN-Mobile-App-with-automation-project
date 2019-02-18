@@ -83,8 +83,7 @@ const styles = StyleSheet.create({
   flooringText: {
     fontSize: 16,
     fontWeight: 'bold',
-    paddingTop: 20,
-    marginLeft: 10
+    paddingTop: 20
   },
   condition: {
     marginTop: 35

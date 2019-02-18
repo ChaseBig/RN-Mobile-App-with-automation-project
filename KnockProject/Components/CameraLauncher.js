@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AppRegistry, Dimensions, StyleSheet, TouchableOpacity, Text, View } from 'react-native';
+import { StyleSheet, TouchableOpacity, Text, View } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Camera, Permissions } from 'expo';
 
@@ -100,7 +100,6 @@ export class CameraLauncher extends Component {
           },
         cameraBtn: {
             color: '#2196F3',
-            paddingLeft: 0,
-            marginTop: -13
+            marginTop: -15
         }
     });

@@ -77,8 +77,7 @@ export class CommentsLauncher extends Component {
         },
         commentsBtn: {
             color: '#2196F3',
-            paddingLeft: 0,
-            marginTop: 32
+            marginTop: 33
         },
         doneBtn: {
             borderWidth:1,

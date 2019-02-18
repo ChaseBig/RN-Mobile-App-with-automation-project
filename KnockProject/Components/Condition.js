@@ -108,8 +108,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         marginTop: 30,
         flexWrap: 'wrap',
-        marginLeft: 20,
-        paddingRight: 45
+        marginLeft: 20
     },
     icons: {
         flexDirection: 'column',
@@ -124,7 +123,8 @@ const styles = StyleSheet.create({
         paddingRight: 15
     },
     launcherIcons: {
-        flexDirection: 'column'
+        flexDirection: 'column',
+        paddingLeft: 47
     },
     btnActive: {
         color: 'green'
