@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
-import { KnockAppImage } from './KnockAppImage';
-import { RoomLayout } from './RoomLayout';
-import { WallsAndPaint } from './WallsAndPaint';
+import { KnockAppImage } from './Components/KnockAppImage';
+import { RoomLayout } from './Components/RoomLayout';
+import { Condition } from './Components/Condition';
 
 
 export default class App extends Component {
@@ -10,11 +10,11 @@ export default class App extends Component {
     return (
       <View style={{ flex: 1, alignItems: "center", backgroundColor: '#fff' }}>
         <KnockAppImage />
-          <Text testID="kitchenHeader" style={{fontWeight: 'bold', fontSize: 19, top: 55, color: 'white', alignItems: 'center'}}>
+          <Text testID="kitchenHeader" style={styles.header}>
             Kitchen
           </Text>
         <RoomLayout />
-        <WallsAndPaint />
+        <Condition />
       </View>
     );
   }
@@ -27,12 +27,11 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
   },
-  test2: {
-      fontSize: 25,
-      marginBottom: 30
-  },
-  test3: {
-      color: 'blue',
-      marginBottom: 20
+  header: {
+      color: 'white',
+      fontWeight: 'bold',
+      fontSize: 19,
+      top: 55,
+      alignItems: 'center'
   }
 });

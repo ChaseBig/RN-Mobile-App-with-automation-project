@@ -14,6 +14,7 @@ export class RoomLayout extends Component {
           Take photos from opposite corners of the room{"\n"}
         </Text>
         <LayoutButtons />
+        <Text style={styles.roomItem}>Walls / Paint</Text>
       </View>
     );
   }
@@ -40,5 +41,12 @@ const styles = StyleSheet.create({
       textAlign: 'center',
       lineHeight: 14,
       fontSize: 15
+  },
+  roomItem: {
+    fontSize: 15,
+    fontWeight: 'bold',
+    textAlign: 'left',
+    paddingTop: 35,
+    marginLeft: -15
   }
 });
