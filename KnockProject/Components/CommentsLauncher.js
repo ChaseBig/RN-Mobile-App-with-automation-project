@@ -50,7 +50,7 @@ export class CommentsLauncher extends Component {
                     <View>
                         <Icon
                             name="commenting"
-                            size={22}
+                            size={25}
                             color='#2196F3'
                         />
                     </View>
@@ -76,12 +76,9 @@ export class CommentsLauncher extends Component {
             flexWrap: 'wrap'
         },
         commentsBtn: {
-            borderColor: '#2196F3',
-            height: 40,
-            width: 150,
             color: '#2196F3',
-            paddingTop: 19,
-            paddingLeft: 20
+            paddingLeft: 0,
+            marginTop: 32
         },
         doneBtn: {
             borderWidth:1,

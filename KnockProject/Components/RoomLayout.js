@@ -15,8 +15,7 @@ export class RoomLayout extends Component {
         <Text testID='infoText' style={styles.infoText}>
           Take photos from opposite corners of the room{"\n"}
         </Text>
-        <LayoutButtons />
-        <Text style={styles.roomItem}>Walls / Paint</Text>
+          <LayoutButtons />
       </View>
     );
   }
@@ -38,17 +37,10 @@ const styles = StyleSheet.create({
       alignSelf: 'center'
   },
   room: {
-      marginTop: 80,
+      marginTop: 81,
       fontWeight: 'bold',
       textAlign: 'center',
       lineHeight: 14,
       fontSize: 15
-  },
-  roomItem: {
-    fontSize: 15,
-    fontWeight: 'bold',
-    textAlign: 'left',
-    paddingTop: 35,
-    marginLeft: -15
   }
 });

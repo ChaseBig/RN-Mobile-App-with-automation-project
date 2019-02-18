@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { StyleSheet, TouchableOpacity, Text, View } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { CommentsLauncher } from './CommentsLauncher';
+import { CameraLauncher } from './CameraLauncher';
 
 const roomItemCondition = {
     Fix: 'Fix',
@@ -13,7 +15,11 @@ const roomItemCondition = {
 export class Condition extends Component {
     constructor(props){
         super(props)
+        this.onCameraLaunchButtonPress = this.onCameraLaunchButtonPress.bind(this);
+        this.onCommentsButtonPress = this.onCommentsButtonPress.bind(this);
         this.state = {
+            accessCamera: false,
+            isShowingCommentsModal: false,
             roomItemCondition
         }
     }
@@ -71,35 +77,54 @@ export class Condition extends Component {
                             <Text style={{fontSize: 11}}>{roomItemCondition.Excellent}</Text>
                         </View>
                     </TouchableOpacity>
+                    <View style={styles.launcherIcons}>
+                        <CameraLauncher onPress={this.onCameraLaunchButtonPress} />
+                        <CommentsLauncher onPress={this.onCommentsButtonPress} />
+                    </View>
                 </View>
             </View>
         );
     }
-}
+
+    onCameraLaunchButtonPress(accessCamera){
+        this.setState({
+            accessCamera: true
+        });
+      }
+    
+    
+    onCommentsButtonPress(isShowingCommentsModal){
+        this.setState({
+            isShowingCommentsModal: true
+        });
+      }
+    }
 
 const styles = StyleSheet.create({
     container: {
-        textAlign: 'right',
-        marginRight: 70,
     },
     buttonGroup: {
         lineHeight: 13,
         flexDirection: 'row',
-        justifyContent: 'space-around',
         marginTop: 30,
-        flexWrap: 'wrap'
+        flexWrap: 'wrap',
+        marginLeft: 20,
+        paddingRight: 45
     },
     icons: {
         flexDirection: 'column',
         alignItems: 'center',
         fontSize: 11,
-        paddingLeft: 16
+        paddingLeft: 15
     },
     fixIcon: {
         flexDirection: 'column',
         alignItems: 'center',
         fontSize: 11,
-        paddingRight: 10
+        paddingRight: 15
+    },
+    launcherIcons: {
+        flexDirection: 'column'
     },
     btnActive: {
         color: 'green'

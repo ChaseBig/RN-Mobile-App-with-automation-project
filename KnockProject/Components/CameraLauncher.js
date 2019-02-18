@@ -69,7 +69,7 @@ export class CameraLauncher extends Component {
                     <View>
                         <Icon
                             name="camera"
-                            size={22}
+                            size={25}
                             color='#2196F3'
                         />
                         <Text>{this.state.accessCameraLabel}</Text>
@@ -99,9 +99,8 @@ export class CameraLauncher extends Component {
             margin: 40
           },
         cameraBtn: {
-            height: 40,
-            width: 150,
             color: '#2196F3',
-            paddingLeft: 20
+            paddingLeft: 0,
+            marginTop: -13
         }
     });
