@@ -10,59 +10,243 @@ exports[`WallsAndPaint should render TouchableOpacity "Good" wall condition 1`] 
 `;
 
 exports[`WallsAndPaint should render correctly with no props 1`] = `
-<Component
-  style={
-    Object {
-      "alignItems": "center",
-      "backgroundColor": "#fff",
-      "flex": 1,
-    }
-  }
->
-  <Component
-    style={
-      Object {
-        "alignItems": "center",
-        "color": "white",
-        "fontSize": 19,
-        "fontWeight": "bold",
-        "top": 55,
+<ScrollViewMock>
+  <Component>
+    <Component
+      style={
+        Object {
+          "alignItems": "stretch",
+          "flex": 1,
+        }
       }
-    }
-    testID="kitchenHeader"
-  >
-    Kitchen
+    >
+      <Component
+        style={
+          Object {
+            "backgroundColor": "#2196F3",
+            "height": 90,
+          }
+        }
+      >
+        <Component
+          style={
+            Object {
+              "color": "white",
+              "fontSize": 18,
+              "fontWeight": "bold",
+              "textAlign": "center",
+              "top": 60,
+            }
+          }
+          testID="kitchenHeader"
+        >
+          Kitchen
+        </Component>
+      </Component>
+    </Component>
+    <RoomLayout />
+    <Component
+      style={
+        Object {
+          "fontSize": 16,
+          "fontWeight": "bold",
+          "marginLeft": 10,
+          "paddingTop": 35,
+        }
+      }
+    >
+      Walls / Paint
+    </Component>
+    <Condition />
+    <Themed.Divider
+      style={
+        Object {
+          "marginTop": 30,
+        }
+      }
+      styleName="line"
+    />
+    <Component
+      style={
+        Object {
+          "fontSize": 16,
+          "fontWeight": "bold",
+          "marginLeft": 10,
+          "paddingTop": 20,
+        }
+      }
+    >
+      Ceiling
+    </Component>
+    <Component
+      testID="selectedCeilingType"
+    />
+    <CeilingType
+      onPress={[Function]}
+    />
+    <Condition
+      style={
+        Object {
+          "marginTop": 35,
+        }
+      }
+    />
+    <Themed.Divider
+      style={
+        Object {
+          "marginTop": 30,
+        }
+      }
+      styleName="line"
+    />
+    <Component
+      style={
+        Object {
+          "fontSize": 16,
+          "fontWeight": "bold",
+          "marginLeft": 10,
+          "paddingTop": 20,
+        }
+      }
+    >
+      Flooring
+    </Component>
+    <Component
+      testID="selectedFlooringType"
+    />
+    <FlooringType
+      onPress={[Function]}
+    />
+    <Condition />
+    <Themed.Divider
+      style={
+        Object {
+          "marginTop": 20,
+        }
+      }
+      styleName="line"
+    />
   </Component>
-  <RoomLayout />
-  <WallsAndPaint />
-</Component>
+</ScrollViewMock>
 `;
 
 exports[`WallsAndPaint should render view container text correctly with given string 1`] = `
-<Component
-  style={
-    Object {
-      "alignItems": "center",
-      "backgroundColor": "#fff",
-      "flex": 1,
-    }
-  }
->
-  <Component
-    style={
-      Object {
-        "alignItems": "center",
-        "color": "white",
-        "fontSize": 19,
-        "fontWeight": "bold",
-        "top": 55,
+<ScrollViewMock>
+  <Component>
+    <Component
+      style={
+        Object {
+          "alignItems": "stretch",
+          "flex": 1,
+        }
       }
-    }
-    testID="kitchenHeader"
-  >
-    Kitchen
+    >
+      <Component
+        style={
+          Object {
+            "backgroundColor": "#2196F3",
+            "height": 90,
+          }
+        }
+      >
+        <Component
+          style={
+            Object {
+              "color": "white",
+              "fontSize": 18,
+              "fontWeight": "bold",
+              "textAlign": "center",
+              "top": 60,
+            }
+          }
+          testID="kitchenHeader"
+        >
+          Kitchen
+        </Component>
+      </Component>
+    </Component>
+    <RoomLayout />
+    <Component
+      style={
+        Object {
+          "fontSize": 16,
+          "fontWeight": "bold",
+          "marginLeft": 10,
+          "paddingTop": 35,
+        }
+      }
+    >
+      Walls / Paint
+    </Component>
+    <Condition />
+    <Themed.Divider
+      style={
+        Object {
+          "marginTop": 30,
+        }
+      }
+      styleName="line"
+    />
+    <Component
+      style={
+        Object {
+          "fontSize": 16,
+          "fontWeight": "bold",
+          "marginLeft": 10,
+          "paddingTop": 20,
+        }
+      }
+    >
+      Ceiling
+    </Component>
+    <Component
+      testID="selectedCeilingType"
+    />
+    <CeilingType
+      onPress={[Function]}
+    />
+    <Condition
+      style={
+        Object {
+          "marginTop": 35,
+        }
+      }
+    />
+    <Themed.Divider
+      style={
+        Object {
+          "marginTop": 30,
+        }
+      }
+      styleName="line"
+    />
+    <Component
+      style={
+        Object {
+          "fontSize": 16,
+          "fontWeight": "bold",
+          "marginLeft": 10,
+          "paddingTop": 20,
+        }
+      }
+    >
+      Flooring
+    </Component>
+    <Component
+      testID="selectedFlooringType"
+    />
+    <FlooringType
+      onPress={[Function]}
+    />
+    <Condition />
+    <Themed.Divider
+      style={
+        Object {
+          "marginTop": 20,
+        }
+      }
+      styleName="line"
+    />
   </Component>
-  <RoomLayout />
-  <WallsAndPaint />
-</Component>
+</ScrollViewMock>
 `;

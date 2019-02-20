@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, ScrollView, View } from 'react-native';
-import { KnockAppImage } from './Components/KnockAppImage';
+// import { KnockAppImage } from './Components/KnockAppImage';
 import { RoomLayout } from './Components/RoomLayout';
 import { Condition } from './Components/Condition';
 import { CeilingType } from './Components/CeilingType';
