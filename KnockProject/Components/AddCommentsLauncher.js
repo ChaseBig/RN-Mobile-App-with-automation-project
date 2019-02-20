@@ -3,7 +3,7 @@ import { StyleSheet, TouchableOpacity, TextInput, Modal, Text, View } from 'reac
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 
-export class CommentsLauncher extends Component {
+export class AddCommentsLauncher extends Component {
     constructor(props) {
         super(props)
         this.state = {

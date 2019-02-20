@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, Button } from 'react-native';
 import { LayoutButtons } from './LayoutButtons';
+import { CameraLauncher } from './CameraLauncher';
+import { CommentsLauncher } from './CommentsLauncher';
 
 
 export class RoomLayout extends Component {
@@ -13,7 +15,7 @@ export class RoomLayout extends Component {
         <Text testID='infoText' style={styles.infoText}>
           Take photos from opposite corners of the room{"\n"}
         </Text>
-        <LayoutButtons />
+          <LayoutButtons />
       </View>
     );
   }
@@ -32,10 +34,11 @@ const styles = StyleSheet.create({
       textAlign: 'center',
       fontSize: 12,
       justifyContent: 'center',
-      alignSelf: 'center'
+      alignSelf: 'center',
+      color: 'grey'
   },
   room: {
-      marginTop: 80,
+      marginTop: 15,
       fontWeight: 'bold',
       textAlign: 'center',
       lineHeight: 14,
