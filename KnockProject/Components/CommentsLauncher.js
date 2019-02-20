@@ -50,7 +50,7 @@ export class CommentsLauncher extends Component {
                     <View>
                         <Icon
                             name="commenting"
-                            size={25}
+                            size={27}
                             color='#2196F3'
                         />
                     </View>
@@ -77,7 +77,7 @@ export class CommentsLauncher extends Component {
         },
         commentsBtn: {
             color: '#2196F3',
-            marginTop: 33
+            marginTop: 23
         },
         doneBtn: {
             borderWidth:1,

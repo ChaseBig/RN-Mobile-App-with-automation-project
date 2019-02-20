@@ -34,10 +34,11 @@ const styles = StyleSheet.create({
       textAlign: 'center',
       fontSize: 12,
       justifyContent: 'center',
-      alignSelf: 'center'
+      alignSelf: 'center',
+      color: 'grey'
   },
   room: {
-      marginTop: 81,
+      marginTop: 15,
       fontWeight: 'bold',
       textAlign: 'center',
       lineHeight: 14,

@@ -3,6 +3,7 @@ import { StyleSheet, TouchableOpacity, Text, View } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { CommentsLauncher } from './CommentsLauncher';
 import { CameraLauncher } from './CameraLauncher';
+import { Divider } from 'react-native-elements';
 
 const roomItemCondition = {
     Fix: 'Fix',
@@ -18,14 +19,14 @@ export class Condition extends Component {
         this.onCameraLaunchButtonPress = this.onCameraLaunchButtonPress.bind(this);
         this.onCommentsButtonPress = this.onCommentsButtonPress.bind(this);
         this.state = {
-            accessCamera: false,
+            isShowingNativeCamera: false,
             isShowingCommentsModal: false,
             roomItemCondition
         }
     }
     render() {
         return (
-            <View style={ styles.container }>
+            <View>
                 <View style={styles.buttonGroup} >
                     <TouchableOpacity testID='floorLevelSelection' onPress={() => this.setState({ roomItemCondition: roomItemCondition.Fix })}>
                         <View style={styles.fixIcon}>
@@ -46,7 +47,7 @@ export class Condition extends Component {
                             />
                             <Text style={{fontSize:11}}>{roomItemCondition.Poor}</Text>
                         </View>
-                        </TouchableOpacity>
+                    </TouchableOpacity>
                     <TouchableOpacity testID='floorLevelSelection' onPress={() => this.setState({roomItemCondition: roomItemCondition.Average})}>
                         <View style={styles.icons}>
                             <Icon
@@ -78,7 +79,7 @@ export class Condition extends Component {
                         </View>
                     </TouchableOpacity>
                     <View style={styles.launcherIcons}>
-                        <CameraLauncher onPress={this.onCameraLaunchButtonPress} />
+                        <CameraLauncher  onPress={this.onCameraLaunchButtonPress} />
                         <CommentsLauncher onPress={this.onCommentsButtonPress} />
                     </View>
                 </View>
@@ -86,12 +87,11 @@ export class Condition extends Component {
         );
     }
 
-    onCameraLaunchButtonPress(accessCamera){
+    onCameraLaunchButtonPress(isShowingNativeCamera){
         this.setState({
-            accessCamera: true
+          isShowingNativeCamera: true
         });
       }
-    
     
     onCommentsButtonPress(isShowingCommentsModal){
         this.setState({
@@ -101,14 +101,13 @@ export class Condition extends Component {
     }
 
 const styles = StyleSheet.create({
-    container: {
-    },
     buttonGroup: {
         lineHeight: 13,
         flexDirection: 'row',
-        marginTop: 30,
+        marginTop: 15,
         flexWrap: 'wrap',
-        marginLeft: 20
+        marginLeft: 20,
+        paddingTop: 15
     },
     icons: {
         flexDirection: 'column',
@@ -124,7 +123,8 @@ const styles = StyleSheet.create({
     },
     launcherIcons: {
         flexDirection: 'column',
-        paddingLeft: 47
+        paddingLeft: 47,
+        marginTop: -15
     },
     btnActive: {
         color: 'green'
