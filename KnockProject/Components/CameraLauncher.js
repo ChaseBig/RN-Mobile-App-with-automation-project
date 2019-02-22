@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, TouchableOpacity, ScrollView, Image, View } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import { FontAwesome } from '@expo/vector-icons';
 import { Constants, Camera, FileSystem, Permissions } from 'expo';
 import { NativeCamera } from './NativeCamera';
 
@@ -42,7 +42,7 @@ export class CameraLauncher extends Component {
             <View>
               <TouchableOpacity style={styles.cameraBtn} onPress={()=>this.accessCamera(true)}>
                 <View>
-                  <Icon
+                  <FontAwesome
                     name='camera'
                     size={25}
                     color='#2196F3'

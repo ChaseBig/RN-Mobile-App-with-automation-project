@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, Button } from 'react-native';
 import { LayoutButtons } from './LayoutButtons';
-import { CameraLauncher } from './CameraLauncher';
-import { CommentsLauncher } from './CommentsLauncher';
 
 
 export class RoomLayout extends Component {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, TouchableOpacity, Text, View } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import { FontAwesome } from '@expo/vector-icons';
 import { ImagePicker, Permissions } from 'expo';
 
 
@@ -28,7 +28,7 @@ export class SavedPhotosLauncher extends Component {
         return (
             <TouchableOpacity style={styles.cameraBtn} onPress={this.isShowingSavedPhotos}>
                 <View style={{flexDirection: 'row', paddingTop: 6}}>
-                    <Icon
+                    <FontAwesome
                         name="camera"
                         size={22}
                         color='#2196F3'
