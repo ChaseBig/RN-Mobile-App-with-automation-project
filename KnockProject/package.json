@@ -4,6 +4,7 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
+    "test": "node_modules/.bin/jest test/**/*.spec.js",
     "eject": "expo eject"
   },
   "dependencies": {
@@ -21,7 +22,26 @@
     "react-navigation": "^3.1.5"
   },
   "devDependencies": {
-    "babel-preset-expo": "^5.0.0"
+    "babel-preset-expo": "^5.0.0",
+    "detox": "^10.0.9",
+    "detox-expo-helpers": "^0.6.0",
+    "expo-detox-hook": "^1.0.10",
+    "jest-expo": "^32.0.0",
+    "react-native-testing-library": "^1.5.0",
+    "react-test-renderer": "^16.8.3"
   },
-  "private": true
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "private": true,
+  "detox": {
+    "test-runner": "jest",
+    "configurations": {
+      "ios.sim": {
+        "binaryPath": "bin/Exponent.app",
+        "type": "ios.simulator",
+        "name": "iPhone X"
+      }
+    }
+  }
 }

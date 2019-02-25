@@ -27,7 +27,7 @@ export class CameraLauncher extends Component {
       }
     }
       render() {
-        console.log('bob', this.state.isCapturing)
+        console.log('camera open?', this.state.isCapturing)
         if(this.state.isCapturing === true) {
         return (
                 <View>
@@ -40,7 +40,7 @@ export class CameraLauncher extends Component {
         } else {
           return (
             <View>
-              <TouchableOpacity style={styles.cameraBtn} onPress={()=>this.accessCamera(true)}>
+              <TouchableOpacity testID="cameraIconLauncherBtn" style={styles.cameraBtn} onPress={()=>this.accessCamera(true)}>
                 <View>
                   <FontAwesome
                     name='camera'

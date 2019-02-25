@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text, Button } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 import { LayoutButtons } from './LayoutButtons';
 
 
@@ -7,13 +7,13 @@ export class RoomLayout extends Component {
   render() {
     return (
       <View>
-        <Text testID='roomLayoutText' style={styles.room}>
+        <Text testID="roomLayoutText" style={styles.room}>
           Room Layout{"\n"}
         </Text>
-        <Text testID='infoText' style={styles.infoText}>
+        <Text testID="infoText" style={styles.infoText}>
           Take photos from opposite corners of the room{"\n"}
         </Text>
-          <LayoutButtons />
+          <LayoutButtons testID="layoutButtonsComponent" />
       </View>
     );
   }

@@ -26,7 +26,7 @@ export class SavedPhotosLauncher extends Component {
       
     render() {
         return (
-            <TouchableOpacity style={styles.cameraBtn} onPress={this.isShowingSavedPhotos}>
+            <TouchableOpacity testID="savedPhotosBtn" style={styles.cameraBtn} onPress={this.isShowingSavedPhotos}>
                 <View style={{flexDirection: 'row', paddingTop: 6}}>
                     <FontAwesome
                         name="camera"

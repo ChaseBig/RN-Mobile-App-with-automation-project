@@ -27,7 +27,7 @@ export class Condition extends Component {
         return (
             <View>
                 <View style={styles.buttonGroup} >
-                    <TouchableOpacity testID='floorLevelSelection' onPress={() => this.setState({ roomItemCondition: roomItemCondition.Fix })}>
+                    <TouchableOpacity testID="conditionFix" onPress={() => this.setState({ roomItemCondition: roomItemCondition.Fix })}>
                         <View style={styles.fixIcon}>
                             <FontAwesome
                                 name='exclamation-circle'
@@ -37,7 +37,7 @@ export class Condition extends Component {
                             <Text style={{flexWrap: 'wrap', flexDirection: 'column', fontSize:11}}>{roomItemCondition.Fix}</Text>
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity testID='floorLevelSelection' onPress={() => this.setState({roomItemCondition: roomItemCondition.Poor})}>
+                    <TouchableOpacity testID="conditionPoor" onPress={() => this.setState({roomItemCondition: roomItemCondition.Poor})}>
                         <View style={styles.icons}>
                             <FontAwesome
                                 name='frown-o'
@@ -47,7 +47,7 @@ export class Condition extends Component {
                             <Text style={{fontSize:11}}>{roomItemCondition.Poor}</Text>
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity testID='floorLevelSelection' onPress={() => this.setState({roomItemCondition: roomItemCondition.Average})}>
+                    <TouchableOpacity testID="conditionAverage" onPress={() => this.setState({roomItemCondition: roomItemCondition.Average})}>
                         <View style={styles.icons}>
                             <FontAwesome
                                 name='meh-o'
@@ -57,7 +57,7 @@ export class Condition extends Component {
                             <Text style={{fontSize:11}}>{roomItemCondition.Average}</Text>
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity testID='floorLevelSelection' onPress={() => this.setState({ roomItemCondition: roomItemCondition.Good })}>
+                    <TouchableOpacity testID="conditionGood" onPress={() => this.setState({ roomItemCondition: roomItemCondition.Good })}>
                         <View style={styles.icons}>
                             <FontAwesome
                                 name='smile-o'
@@ -67,7 +67,7 @@ export class Condition extends Component {
                             <Text style={{fontSize:11}}>{roomItemCondition.Good}</Text>
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity testID='floorLevelSelection' onPress={() => this.setState({ roomItemCondition: roomItemCondition.Excellent })}>
+                    <TouchableOpacity testID="conditionExcellent" onPress={() => this.setState({ roomItemCondition: roomItemCondition.Excellent })}>
                         <View style={styles.icons}>
                             <FontAwesome
                                 name='smile-o'
