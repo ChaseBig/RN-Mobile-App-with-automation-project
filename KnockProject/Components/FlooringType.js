@@ -21,22 +21,22 @@ export class FlooringType extends Component {
     render() {
         return (
             <View style={styles.buttonGroup} >
-                <TouchableOpacity testID='flooringTypeSelection' onPress={() => this.setState({flooringType: flooringType.Hardwood})}>
+                <TouchableOpacity testID='flooringTypeHardwood' onPress={() => this.setState({flooringType: flooringType.Hardwood})}>
                     <Text style={this.state.flooringType === (flooringType.Hardwood) ? styles.btnActive : styles.btnInactive}>{flooringType.Hardwood}</Text>
                 </TouchableOpacity>
-                <TouchableOpacity testID='flooringTypeSelection' onPress={() => this.setState({flooringType: flooringType.Tile})}>
+                <TouchableOpacity testID='flooringTypeTile' onPress={() => this.setState({flooringType: flooringType.Tile})}>
                     <Text style={this.state.flooringType === (flooringType.Tile) ? styles.btnActive : styles.btnInactive}>{flooringType.Tile}</Text>
                 </TouchableOpacity>
-                <TouchableOpacity testID='flooringTypeSelection' onPress={() => this.setState({flooringType: flooringType.Carpet})}>
+                <TouchableOpacity testID='flooringTypeCarpet' onPress={() => this.setState({flooringType: flooringType.Carpet})}>
                     <Text style={this.state.flooringType === (flooringType.Carpet) ? styles.btnActive : styles.btnInactive}>{flooringType.Carpet}</Text>
                 </TouchableOpacity>
-                <TouchableOpacity testID='flooringTypeSelection' onPress={() => this.setState({flooringType: flooringType.Vinyl})}>
+                <TouchableOpacity testID='flooringTypeVinyl' onPress={() => this.setState({flooringType: flooringType.Vinyl})}>
                     <Text style={this.state.flooringType === (flooringType.Vinyl) ? styles.btnActive : styles.btnInactive}>{flooringType.Vinyl}</Text>
                 </TouchableOpacity>
-                <TouchableOpacity testID='flooringTypeSelection' onPress={() => this.setState({flooringType: flooringType.Laminate})}>
+                <TouchableOpacity testID='flooringTypeLaminate' onPress={() => this.setState({flooringType: flooringType.Laminate})}>
                     <Text style={this.state.flooringType === (flooringType.Laminate) ? styles.btnActive : styles.btnInactive}>{flooringType.Laminate}</Text>
                 </TouchableOpacity>
-                <TouchableOpacity testID='flooringTypeSelection' onPress={() => this.setState({flooringType: flooringType.Other})}>
+                <TouchableOpacity testID='flooringTypeOther' onPress={() => this.setState({flooringType: flooringType.Other})}>
                     <Text style={this.state.flooringType === (flooringType.Other) ? styles.btnActive : styles.btnInactive}>{flooringType.Other}</Text>
                 </TouchableOpacity>
             </View>

@@ -63,7 +63,7 @@ export class NativeCamera extends Component {
       ratio: '16:9',
       ratios: [],
       newPhotos: false,
-      permissionsGranted: false,
+      permissionsGranted: true,
       pictureSize: undefined,
       pictureSizes: [],
       pictureSizeId: 0,
@@ -72,7 +72,7 @@ export class NativeCamera extends Component {
     };
   }
     async componentWillMount() {
-      const { status } = await Permissions.askAsync(Permissions.CAMERA);
+      const { status } = await Permissions.askAsync(Permissions.CAMERA, Permissions.CAMERA_ROLL);
       this.setState({ permissionsGranted: status === 'granted' });
     }
 

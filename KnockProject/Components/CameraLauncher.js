@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, TouchableOpacity, ScrollView, Image, View } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import { FontAwesome } from '@expo/vector-icons';
 import { Constants, Camera, FileSystem, Permissions } from 'expo';
 import { NativeCamera } from './NativeCamera';
 
@@ -27,7 +27,7 @@ export class CameraLauncher extends Component {
       }
     }
       render() {
-        console.log('bob', this.state.isCapturing)
+        console.log('camera open?', this.state.isCapturing)
         if(this.state.isCapturing === true) {
         return (
                 <View>
@@ -40,9 +40,9 @@ export class CameraLauncher extends Component {
         } else {
           return (
             <View>
-              <TouchableOpacity style={styles.cameraBtn} onPress={()=>this.accessCamera(true)}>
+              <TouchableOpacity testID="cameraIconLauncherBtn" style={styles.cameraBtn} onPress={()=>this.accessCamera(true)}>
                 <View>
-                  <Icon
+                  <FontAwesome
                     name='camera'
                     size={25}
                     color='#2196F3'

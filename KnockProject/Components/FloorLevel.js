@@ -19,18 +19,18 @@ export class FloorLevel extends Component {
     render() {
         return (
             <View style={ styles.container }>
-                <Text style={{ flexDirection: 'row', justifyContent: 'flex-end', fontWeight: 'bold'}}>Floor Level</Text>
+                <Text testID="floorLevelHeader" style={{ flexDirection: 'row', justifyContent: 'flex-end', fontWeight: 'bold'}}>Floor Level</Text>
                     <View style={styles.buttonGroup} >
-                        <TouchableOpacity testID='floorLevelSelection' onPress={() => this.setState({ floorLevel: floorLevel.Basement })}>
+                        <TouchableOpacity testID='floorLevelBasement' onPress={() => this.setState({ floorLevel: floorLevel.Basement })}>
                             <Text style={this.state.floorLevel === (floorLevel.Basement) ? styles.btnActive : styles.btnInactive}>{floorLevel.Basement}</Text>
                         </TouchableOpacity>
-                        <TouchableOpacity testID='floorLevelSelection' onPress={() => this.setState({floorLevel: floorLevel.Lower})}>
+                        <TouchableOpacity testID='floorLevelLower' onPress={() => this.setState({floorLevel: floorLevel.Lower})}>
                             <Text style={this.state.floorLevel === (floorLevel.Lower) ? styles.btnActive : styles.btnInactive}>{floorLevel.Lower}</Text>
                         </TouchableOpacity>
-                        <TouchableOpacity testID='floorLevelSelection' onPress={() => this.setState({floorLevel: floorLevel.Main})}>
+                        <TouchableOpacity testID='floorLevelMain' onPress={() => this.setState({floorLevel: floorLevel.Main})}>
                             <Text style={this.state.floorLevel === (floorLevel.Main) ? styles.btnActive : styles.btnInactive}>{floorLevel.Main}</Text>
                         </TouchableOpacity>
-                        <TouchableOpacity testID='floorLevelSelection' onPress={() => this.setState({ floorLevel: floorLevel.Upper })}>
+                        <TouchableOpacity testID='floorLevelUpper' onPress={() => this.setState({ floorLevel: floorLevel.Upper })}>
                             <Text style={this.state.floorLevel === (floorLevel.Upper) ? styles.btnActive : styles.btnInactive}>{floorLevel.Upper}</Text>
                         </TouchableOpacity>
                     </View>

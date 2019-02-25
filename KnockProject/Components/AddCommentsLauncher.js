@@ -30,6 +30,7 @@ export class AddCommentsLauncher extends Component {
                             <Text style={styles.headerText}>Add Comments</Text>
                         <View style={{alignContent: 'center'}}>
                             <TextInput
+                            testID="addCommentText"
                             style={styles.modalBox}
                             placeholder="Thoughts on the Kitchen?"
                             onChangeText={(text) => this.setState({text})}
@@ -46,7 +47,7 @@ export class AddCommentsLauncher extends Component {
                     </View>
                 </Modal>
 
-                <TouchableOpacity style={styles.commentsBtn} onPress={() => this.setModalVisible(true)} >
+                <TouchableOpacity testID="addCommentsRoomLayoutButton" style={styles.commentsBtn} onPress={() => this.setModalVisible(true)} >
                     <View style={{flexDirection: 'row', paddingTop: 3}}>
                         <Icon
                             name="commenting"
@@ -69,7 +70,7 @@ export class AddCommentsLauncher extends Component {
             color: '#2196F3'
         },
         modalBox: {
-            height: 400,
+            height: 300,
             width: 320,
             borderWidth: 1,
             borderRadius: 12,

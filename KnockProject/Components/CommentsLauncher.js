@@ -19,6 +19,7 @@ export class CommentsLauncher extends Component {
             <View>
                 <Modal
                     animatedType= "slide"
+                    testID="addCommentsModalOpen"
                     transparent={false}
                     presentationStyle='overFullScreen'
                     visible={this.state.isShowingCommentsModal}
@@ -30,6 +31,7 @@ export class CommentsLauncher extends Component {
                             <Text style={styles.headerText}>Add Comments</Text>
                         <View style={{alignContent: 'center'}}>
                             <TextInput
+                            testID="addCommentText"
                             style={styles.modalBox}
                             placeholder="Thoughts on the Kitchen?"
                             onChangeText={(text) => this.setState({text})}
@@ -37,6 +39,7 @@ export class CommentsLauncher extends Component {
                         </View>
 
                         <TouchableOpacity
+                            testID="addCommentsDoneBtn"
                             onPress={() => {
                             this.setModalVisible(!this.state.isShowingCommentsModal);
                             }}>
@@ -46,7 +49,7 @@ export class CommentsLauncher extends Component {
                     </View>
                 </Modal>
 
-                <TouchableOpacity style={styles.commentsBtn} onPress={() => this.setModalVisible(true)} >
+                <TouchableOpacity testID="commentsIconButton" style={styles.commentsBtn} onPress={() => this.setModalVisible(true)} >
                     <View>
                         <Icon
                             name="commenting"
@@ -67,7 +70,7 @@ export class CommentsLauncher extends Component {
             color: '#2196F3'
         },
         modalBox: {
-            height: 400,
+            height: 300,
             width: 320,
             borderWidth: 1,
             borderRadius: 12,

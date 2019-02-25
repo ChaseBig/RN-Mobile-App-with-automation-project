@@ -19,7 +19,7 @@ export default class App extends Component {
   }
   render() {
     return (
-      <ScrollView >
+      <ScrollView testID="scrollView">
         <View >
           {/* <KnockAppImage /> */}
           <View style={{ flex: 1, alignItems: 'stretch'}}>
@@ -30,17 +30,17 @@ export default class App extends Component {
             </View>
           </View>
           <RoomLayout />
-            <Text style={styles.wallText}>Walls / Paint</Text>
-          <Condition />
+            <Text testID="wallsPaintHeaderText" style={styles.wallText}>Walls / Paint</Text>
+          <Condition testID="wallsPaintConditionComp" />
           <Divider styleName='line' style={{marginTop: 30}}/>
-            <Text style={styles.ceilingText}>Ceiling</Text>
+            <Text testID="ceilingHeaderText" style={styles.ceilingText}>Ceiling</Text>
             <Text testID="selectedCeilingType" >
               {this.state.ceilingType}
             </Text>
           <CeilingType onPress={this.onButtonPress} />
           <Condition style={styles.ceCondition}/>
           <Divider styleName='line' style={{marginTop: 30}}/>
-            <Text style={styles.flooringText}>Flooring</Text>
+            <Text testID="flooringHeaderText" style={styles.flooringText}>Flooring</Text>
             <Text testID="selectedFlooringType" >
               {this.state.flooringType}
             </Text>

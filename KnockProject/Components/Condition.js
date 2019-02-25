@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { StyleSheet, TouchableOpacity, Text, View } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import { FontAwesome } from '@expo/vector-icons';
 import { CommentsLauncher } from './CommentsLauncher';
 import { CameraLauncher } from './CameraLauncher';
-import { Divider } from 'react-native-elements';
 
 const roomItemCondition = {
     Fix: 'Fix',
@@ -28,19 +27,19 @@ export class Condition extends Component {
         return (
             <View>
                 <View style={styles.buttonGroup} >
-                    <TouchableOpacity testID='floorLevelSelection' onPress={() => this.setState({ roomItemCondition: roomItemCondition.Fix })}>
+                    <TouchableOpacity testID="conditionFix" onPress={() => this.setState({ roomItemCondition: roomItemCondition.Fix })}>
                         <View style={styles.fixIcon}>
-                            <Icon
-                                name='medkit'
+                            <FontAwesome
+                                name='exclamation-circle'
                                 size={35}
-                                style={this.state.roomItemCondition === (roomItemCondition.Fix) ? styles.btnActive : styles.btnInactive}
+                                style={this.state.roomItemCondition === (roomItemCondition.Fix) ? styles.alertBtnActive : styles.btnInactive}
                             />
                             <Text style={{flexWrap: 'wrap', flexDirection: 'column', fontSize:11}}>{roomItemCondition.Fix}</Text>
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity testID='floorLevelSelection' onPress={() => this.setState({roomItemCondition: roomItemCondition.Poor})}>
+                    <TouchableOpacity testID="conditionPoor" onPress={() => this.setState({roomItemCondition: roomItemCondition.Poor})}>
                         <View style={styles.icons}>
-                            <Icon
+                            <FontAwesome
                                 name='frown-o'
                                 size={35}
                                 style={this.state.roomItemCondition === (roomItemCondition.Poor) ? styles.btnActive : styles.btnInactive}
@@ -48,9 +47,9 @@ export class Condition extends Component {
                             <Text style={{fontSize:11}}>{roomItemCondition.Poor}</Text>
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity testID='floorLevelSelection' onPress={() => this.setState({roomItemCondition: roomItemCondition.Average})}>
+                    <TouchableOpacity testID="conditionAverage" onPress={() => this.setState({roomItemCondition: roomItemCondition.Average})}>
                         <View style={styles.icons}>
-                            <Icon
+                            <FontAwesome
                                 name='meh-o'
                                 size={35}
                                 style={this.state.roomItemCondition === (roomItemCondition.Average) ? styles.btnActive : styles.btnInactive}
@@ -58,9 +57,9 @@ export class Condition extends Component {
                             <Text style={{fontSize:11}}>{roomItemCondition.Average}</Text>
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity testID='floorLevelSelection' onPress={() => this.setState({ roomItemCondition: roomItemCondition.Good })}>
+                    <TouchableOpacity testID="conditionGood" onPress={() => this.setState({ roomItemCondition: roomItemCondition.Good })}>
                         <View style={styles.icons}>
-                            <Icon
+                            <FontAwesome
                                 name='smile-o'
                                 size={35}
                                 style={this.state.roomItemCondition === (roomItemCondition.Good) ? styles.btnActive : styles.btnInactive}
@@ -68,9 +67,9 @@ export class Condition extends Component {
                             <Text style={{fontSize:11}}>{roomItemCondition.Good}</Text>
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity testID='floorLevelSelection' onPress={() => this.setState({ roomItemCondition: roomItemCondition.Excellent })}>
+                    <TouchableOpacity testID="conditionExcellent" onPress={() => this.setState({ roomItemCondition: roomItemCondition.Excellent })}>
                         <View style={styles.icons}>
-                            <Icon
+                            <FontAwesome
                                 name='smile-o'
                                 size={35}
                                 style={this.state.roomItemCondition === (roomItemCondition.Excellent) ? styles.btnActive : styles.btnInactive}
@@ -128,6 +127,9 @@ const styles = StyleSheet.create({
     },
     btnActive: {
         color: 'green'
+    },
+    alertBtnActive: {
+        color: 'red'
     },
     btnInactive: {
         color: '#B5B5B5'

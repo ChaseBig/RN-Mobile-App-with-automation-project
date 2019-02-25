@@ -19,16 +19,16 @@ export class CeilingType extends Component {
     render() {
         return (
             <View style={styles.buttonGroup} >
-                <TouchableOpacity testID='ceilingTypeSelection' onPress={() => this.setState({ceilingType: ceilingType.Flat})}>
+                <TouchableOpacity testID='ceilingTypeFlat' onPress={() => this.setState({ceilingType: ceilingType.Flat})}>
                     <Text style={this.state.ceilingType === (ceilingType.Flat) ? styles.btnActive : styles.btnInactive}>{ceilingType.Flat}</Text>
                 </TouchableOpacity>
-                <TouchableOpacity testID='ceilingTypeSelection' onPress={() => this.setState({ceilingType: ceilingType.Spackled})}>
+                <TouchableOpacity testID='ceilingTypeSpackled' onPress={() => this.setState({ceilingType: ceilingType.Spackled})}>
                     <Text style={this.state.ceilingType === (ceilingType.Spackled) ? styles.btnActive : styles.btnInactive}>{ceilingType.Spackled}</Text>
                 </TouchableOpacity>
-                <TouchableOpacity testID='ceilingTypeSelection' onPress={() => this.setState({ceilingType: ceilingType.Popcorn})}>
+                <TouchableOpacity testID='ceilingTypePopcorn' onPress={() => this.setState({ceilingType: ceilingType.Popcorn})}>
                     <Text style={this.state.ceilingType === (ceilingType.Popcorn) ? styles.btnActive : styles.btnInactive}>{ceilingType.Popcorn}</Text>
                 </TouchableOpacity>
-                <TouchableOpacity testID='ceilingTypeSelection' onPress={() => this.setState({ceilingType: ceilingType.Other})}>
+                <TouchableOpacity testID='ceilingTypeOther' onPress={() => this.setState({ceilingType: ceilingType.Other})}>
                     <Text style={this.state.ceilingType === (ceilingType.Other) ? styles.btnActive : styles.btnInactive}>{ceilingType.Other}</Text>
                 </TouchableOpacity>
             </View>
