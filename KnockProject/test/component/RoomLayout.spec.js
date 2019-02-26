@@ -1,22 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { render, fireEvent } from 'react-native-testing-library';
-import NewMessageForm from '../../NewMessageForm';
+import App from '../../App';
+import fetch from 'isomorphic-fetch'
 
 describe('NewMessageForm', () => {
   describe('clicking send', () => {
-    const messageText = 'Hello world';
+    const KitchenHeader = 'Kitchen';
 
     let getByTestId;
 
     beforeEach(() => {
-      ({ getByTestId } = render(<NewMessageForm />));
+      ({ getByTestId } = render(<App />));
 
-      fireEvent.changeText(getByTestId('messageText'), messageText);
-      fireEvent.press(getByTestId('sendButton'));
+      // fireEvent.changeText(getByTestId('messageText'), messageText);
+      // fireEvent.press(getByTestId('sendButton'));
     });
 
     it('clears the message field', () => {
-      expect(getByTestId('messageText').props.value).toEqual('');
+      expect(getByTestId('kitchenHeader').props.value).toEqual('Kitchen');
     });
   });
 });
