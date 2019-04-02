@@ -23,5 +23,5 @@ Run `yarn ios` to start the iOS simulator locally
  - `yarn test` in the terminal instance that is not running the simulator.
  - ***NOTE*** Unit test suite is still WIP
  
- **NOTE**
- Expo apps do not support running the camera from the iOS simulator. If you download the Expo iOS app, you can run the app on your local iPhone device after making an account and publishing the project to your project list within the Expo app. Once you have the app running locally, you can access the camera feature. 
+***NOTE***
+Expo apps do not support running the camera from the iOS simulator. If you download the Expo iOS app, you can run the app on your local iPhone device after making an account and publishing the project to your project list within the Expo app. Once you have the app running locally, you can access the camera feature. 
