@@ -1,4 +1,4 @@
-# KnockKitchenDetail
+# React Native Mobile App with Mobile Automated Test Framework (Detox)
 
 Installation Details: 
 
